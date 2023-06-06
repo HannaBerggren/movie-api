@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-^v4grj1c$%pxrcdp6e3(0o*^qj!t#_mb5+$0%q2q_r@&5$h+7=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-hannaberggren-movieapi-o2dn1bbtlmb.ws-eu98.gitpod.io']
 
 
 # Application definition
@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+
+    'profiles',
 ]
 
 MIDDLEWARE = [

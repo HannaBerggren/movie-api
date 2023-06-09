@@ -8,13 +8,13 @@ class Post(models.Model):
     Default image set so that we can always reference image.url.
     """
     image_filter_choices = [
-    ('_1977', '1977'), ('brannan', 'Brannan'),
-    ('earlybird', 'Earlybird'), ('hudson', 'Hudson'),
-    ('inkwell', 'Inkwell'), ('lofi', 'Lo-Fi'),
-    ('kelvin', 'Kelvin'), ('normal', 'Normal'),
-    ('nashville', 'Nashville'), ('rise', 'Rise'),
-    ('toaster', 'Toaster'), ('valencia', 'Valencia'),
-    ('walden', 'Walden'), ('xpro2', 'X-pro II')
+    ('movie', 'Movie'), ('series', 'Series'),
+    ('comedy', 'Comedy'), ('drama', 'Drama'),
+    ('animation', 'Animation'), ('horror', 'Horror'),
+    ('action', 'Action'), ('science fiction', 'Science Fiction'),
+    ('thriller', 'Thriller'), ('western', 'Western'),
+    ('documentary', 'Documentary'), ('musical', 'Musical'),
+    ('war', 'War'), ('criminal', 'Criminal'), ('children', 'Children')
     ]
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)

@@ -1,39 +1,40 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Movie Fav
 
-Welcome,
+Movie Fav is a site for film and series lovers. Here you can share reviews, talk about characters, give personal information about what you think and feel of the film or serie. 
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+-   [Testing](#testing)
+-   [Deployment](#deployment)
 
-## Codeanywhere Reminders
+## Testing
+### Manual Testing during development
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- During the development and deployment stage, I ensured that:
+    - Initial launch was successful
+    - API endpoints:
+        - Checked for expected functionality.
+        - Verified the HTTP status codes returned correctly.
+        - Verified the different HTTP methods worked as expected.
+    - Authentication and authorization:
+        - Verified protected endpoints with valid and invalid credentials.
+        - Verified permissions
+    - Error Handling
+        - Tested invalid requests and verified error messages were informative.
+    - File uploads
+        - Verified functionality of image uploads
+        - Ensured images were uploaded to the correct Cloudinary path.
+    - Integration
+        - Verified the integration with the Movie fav react app
+        - Ensured data is fetched, updated, and deleted correctly.
 
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+## Deployment
+* My site was deployed to [Heroku](https://herokuapp.com/). After creating a secure environment, I created an app on Heroku.
+    * Create new app
+    * Attach Heroku Postgres as Database in resources
+    * Configured variables by matching keys and values both on heroku and in my secure environment
+    * Connected the appropriate repository
+* After building the app in my IDE, I made a final deployment.
+    * Changed debug to false in settings
+    * Navigated to the deploy option in my app on heroku
+    * Deployed branch

@@ -64,7 +64,7 @@ DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
    os.environ.get('ALLOWED_HOST'),
-   'hannaberggren-moviefav-qjn6wtz3cfv.ws-eu100.gitpod.io',
+   '8000-hannaberggren-movieapi-o2dn1bbtlmb.ws-eu100.gitpod.io',
 ]
 
 if 'CLIENT_ORIGIN' in os.environ:

@@ -84,6 +84,8 @@ CSRF_TRUSTED_ORIGINS = ['https://hannaberggren-moviefav-qjn6wtz3cfv.ws-eu100.git
 
 CORS_ALLOW_CREDENTIALS = True
 
+ROOT_URLCONF = 'movie_api.urls'
+
 
 # Application definition
 
@@ -125,8 +127,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-ROOT_URLCONF = 'movie_api.urls'
 
 TEMPLATES = [
     {

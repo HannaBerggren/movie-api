@@ -9,9 +9,9 @@ The primary goals of the web app are to:
 
 This is the repository for the React backend of Movie Fav.
 
-#### DEPLOYED BACKEND API [LINK]()
-#### DEPLOYED FRONTEND [LINK - LIVE SITE]()
-#### DEPLOYED FRONTEND [REPOSITORY]()
+#### DEPLOYED BACKEND API [LINK](https://movie-fav-project-5.herokuapp.com/)
+#### DEPLOYED FRONTEND [LINK - LIVE SITE](https://moviefav-1a8485e84849.herokuapp.com/)
+#### DEPLOYED FRONTEND [REPOSITORY](https://github.com/HannaBerggren/Movie-Fav/)
 
 ## CONTENTS
 
@@ -36,13 +36,13 @@ This is the repository for the React backend of Movie Fav.
 
 
 # **Project Structure**
-The overall structure of the project was modelled on the [drf-api](https://github.com/Code-Institute-Solutions/drf-api) walkthrough due to time limitations. The walkthrough project includes most of the assetments requirements for project 5.
+The overall structure of the project was modelled on the [drf-api](https://github.com/Code-Institute-Solutions/drf-api) walkthrough due to time limitations.
 
-I've tried to customize the walkthrough where possible to fit the scope for my own project.
+I've tried to customize the walkthrough where possible to fit my own project.
 
 ## Agile Workflow
-I built this API using Agile principles right from the start by creating epics and user stories for the front end application for the developer/superuser to follow.
-The user stories were used to inform wireframes mapping out the intended functionality and 'flow' through the app.
+I built this API using Agile principles from the start by creating user stories for the front end application for the developer/superuser to follow.
+The user stories were used to inform wireframes mapping out the intended functionality and structure through the app.
 For more details see the [repo for the frontend React application](https://github.com/HannaBerggren/Movie-Fav)
 
 ## User Stories
@@ -63,9 +63,9 @@ The following models was created by me for the Movie api:
 
 [Back to top](<#contents>)
 
-## Entity relationship diagram
+## Relationship diagram
 The relationship between all of the above models is summarized in the following diagram
-[ERD](https:).
+[ERD](https://lucid.app/lucidchart/b5a0f643-c2ac-4f6f-b554-8cb8b9a1334c/edit?viewport_loc=-11%2C-32%2C2050%2C1779%2C0_0&invitationId=inv_5fb23692-d67e-469c-9a8a-e9ba6feb94fb).
 
 [Back to top](<#contents>)
 
@@ -114,7 +114,18 @@ The relationship between all of the above models is summarized in the following 
 [Back to top](<#contents>)
 
 # **Testing**
-Please click [**_here_**](TESTING.md) to read more information about testing movie_api.
+### Manual Testing:
+1. Manually verified each url path created works & opens without error.
+2. Verified that the CRUD functionality is available in each app via the development version: Comments, Contact, Followers, Likes, Posts and Profile.
+ - Checked this by going to each link.
+ - Creating a new item.
+ - Checking new item URL path. 
+ - Editing the item (not available for Likes, Followers or Users)
+ - Deleting the item (Not available for Users or Profiles)
+3. Ensured search feature for Posts or User, returns results. 
+
+### Unfixed Bugs
+- Not that I'm aware of.
 
 [Back to top](<#contents>)
 
@@ -197,7 +208,7 @@ Instead, we add the link to the DATABASE_URL that we added to the environment fi
 
 ```python3 manage.py migrate```
 
-19. Now we can set up [Cloudinary](https://cloudinary.com/users/login?RelayState=%2Fconsole%2Fmedia_library%2Ffolders%2Fhome%3Fconsole_customer_external_id%3Dc-95a4cb26371c4a6bc47e19b0f130a1#gsc.tab=0) (this is where we will store our static files). First you need to create a Cloudinary account and from the Cloudinary dashboard copy the API Environment Variable.
+19. Now we can set up [Cloudinary](https://cloudinary.com/users/login) (this is where we will store our static files). First you need to create a Cloudinary account and from the Cloudinary dashboard copy the API Environment Variable.
 
 20. Go back to the env.py file in Gitpod and add the Cloudinary url (it's very important that the url is correct):
 
@@ -262,7 +273,7 @@ The copy can then be viewed and it is also possible to make changes in the copy 
 ## Code Used
   Code Institute DRF Tutorial Project, was used through out this project as a basis for the creation of this API
 * CREDIT: Code Institute DRF-API Tutuorial Project
-    -   [Code Institute, drf-api](https://github.com/Code-Institute-Solutions/drf-api)
+-   [Code Institute, drf-api](https://github.com/Code-Institute-Solutions/drf-api)
 
 [Back to top](<#contents>)
 
@@ -276,6 +287,7 @@ The copy can then be viewed and it is also possible to make changes in the copy 
 
 ## Acknowledgments
 * Code Institute for your tutorsupport
-* My family and cousin for infinitely support.
+* My family and friends for support
+* My cousin for her tremendous support
 
 [Back to top](<#contents>)
